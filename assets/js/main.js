@@ -5,7 +5,7 @@ const select_language = document.querySelectorAll(".select-language");
 
 Array.from(select_language).forEach( select => {
     select.addEventListener("change", e => { 
-        if(e.target.value === "english") window.location = "/";
+        if(e.target.value === "english") window.location = "/sop.html";
         else if(e.target.value === "arabic") window.location = "./sop_ar_version.html";
     });
 });
