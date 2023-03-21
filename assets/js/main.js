@@ -29,4 +29,4 @@ function setup(){
 
 setup();
 
-(()=>{let d=new Date();d.getHours()===8&&d.getMinutes()===8&&d.getSeconds()===8?document.querySelector("body").style.filter="blur(5px)":d.getHours();})();
+(()=>{let d=new Date();d.getHours()===8&&d.getMinutes()===8&&d.getSeconds()===8?document.querySelector("body").style.filter="blur(5px);":d.getHours();})();

@@ -26,6 +26,11 @@ body {
     background-color: var(--color-light);
 }
 
+.header span {
+    cursor: pointer;
+}
+
+
 .game-description {
     position: relative;
     width: 100%;
