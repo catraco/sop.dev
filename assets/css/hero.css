@@ -1,0 +1,58 @@
+
+/* Should add background image */
+.hero {
+  background:  linear-gradient(#000000D0, #000000D0), url(../sprite/hero_background.gif) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .main-btn-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.hero .main-btn {
+  background-color: var(--color-light-primary);
+  color: var(--color-light);
+  font-size: 1.2em;
+  font-weight: 900;
+  position: absolute;
+  border-radius: 2rem;
+  transition: 0.6s ease;
+  opacity: 0.7;
+}
+
+.hero .main-btn:hover {
+  opacity: 1;
+  transform: scale(1.1) rotate(-5deg);
+  animation: main-btn-animation 1s infinite ease;
+  border: 1px solid var(--color-light);
+}
+
+@keyframes main-btn-animation {
+  0% {
+    box-shadow: 0 0 15px 0 var(--color-light-primary);
+  }
+  50% {
+    box-shadow: 0 0 20px 5px var(--color-light-primary);
+  }
+  100% {
+    box-shadow: 0 0 15px 0 var(--color-light-primary);
+  }
+}
+
+.hero .ico {
+  padding: 0 0.5rem;
+  opacity: 0.6;
+}
+
+.hero .ico:hover{ opacity: 1; }

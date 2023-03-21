@@ -1,0 +1,134 @@
+body {
+    position: relative;
+    background-color: var(--color-dark);
+    width: 100%;
+    height: 100%;
+}
+
+.page-background {
+    position: absolute;
+    filter: blur(5px);
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 0;
+    background-color: var(--color-light);
+}
+
+.game-description {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    padding-top: 6rem;
+    text-align: start;
+}
+
+.game-description .title {
+    color: var(--color-light-yellow);
+    font-weight: 900;
+    font-size: 2em;
+    padding: 1rem 0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.game-description .text {
+    color: var(--color-light);
+    font-weight: 700;
+    font-size: 1.4em;
+    line-height: 3rem;
+    padding: 0;
+    margin: 0;
+}
+
+.play-now-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 7rem auto;
+}
+
+.game-description .play-now {
+    position: absolute;
+    font-size: 1.2em;
+    font-weight: 900;
+    display: inline-block;
+    border-radius: 1rem;
+    transition: 0.6s ease;
+    opacity: 0.6;
+    padding: 0.5rem;
+}
+
+.game-description .itchio {
+    color: var(--color-light);
+    background-color: var(--color-light-red);
+}
+
+.game-description .itchio:hover {
+    opacity: 1;
+    transform: scale(1.1) rotate(-5deg);
+    animation: itchio-animation 1s infinite ease;
+    border: 1px solid var(--color-light);
+}
+
+@keyframes itchio-animation {
+    0% {
+        box-shadow: 0 0 15px 0 var(--color-light-red);
+    }
+    50% {
+        box-shadow: 0 0 20px 5px var(--color-light-red);
+    }
+    100% {
+        box-shadow: 0 0 15px 0 var(--color-light-red);
+    }
+}
+
+.game-description .itchio-icon {
+    fill: var(--color-light);
+    height: 50px;
+    width: 50px;
+}
+
+.game-description .googleplay {
+    color: var(--color-dark);
+    background-color: var(--color-light);
+}
+
+.game-description .googleplay:hover {
+    opacity: 1;
+    transform: scale(1.05) rotate(-5deg);
+    animation: googleplay-animation 1s infinite ease;
+    border: 1px solid var(--color-light);
+}
+
+@keyframes googleplay-animation {
+    0% {
+        box-shadow: 0 0 15px 0 var(--color-light);
+    }
+    50% {
+        box-shadow: 0 0 20px 5px var(--color-light);
+    }
+    100% {
+        box-shadow: 0 0 15px 0 var(--color-light);
+    }
+}
+
+.game-description .googleplay-icon {
+    height: 50px;
+    width: 50px;
+}

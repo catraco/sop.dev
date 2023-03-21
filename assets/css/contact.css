@@ -1,0 +1,18 @@
+
+.contact {}
+
+.contact .contact-card {
+  display: inline-block;
+  background-color: var(--color-light);
+  box-shadow: 0 0 10px #00000025;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: 0.7s ease;
+}
+
+.contact .contact-card:hover{ transform: scale(1.05); }
+
+.contact .sprite {
+  height: 100%;
+  width: 100%;
+}

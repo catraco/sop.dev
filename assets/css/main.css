@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+/* Css variable - use (instead of changing the entire code colors , just edit this section) */
+:root {
+    --color-light: #ffffff;
+    --color-dark: #0e1620;
+    --color-light-primary: #04BF8A;
+    --color-dark-primary: #01261C;
+    --color-light-yellow: #dfe23d;
+    --color-light-red: #e75151;
+}
+
+* {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;   
+}
+
+/* Disabled all a tag default text decoration */
+a { text-decoration: none; }
+
+img { vertical-align: middle; }
+
+html { scroll-padding: 5rem; }
+
+section { text-align: center; }
+
+.c-light-primary { color: var(--color-light-primary); }
+.c-dark-primary { color: var(--color-dark-primary); }
+.c-dark { color: var(--color-dark); }
+.c-light { color: var(--color-light); }
+.c-light-yellow {color: var(--color-light-yellow); }
+.c-light-red { color: var(--color-light-red); }
+
+.smt {
+    font-size: 1.4em;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+  
+.lgt {
+    font-size: 3em;
+    font-weight: 900;
+    white-space: nowrap;
+}
+
+.strong {
+    font-weight: 700;
+}
