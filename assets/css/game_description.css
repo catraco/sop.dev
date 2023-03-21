@@ -12,7 +12,7 @@ body {
     min-height: 100vh;
     height: 100%;
     object-fit: cover;
-    opacity: 0.4;
+    opacity: 0.2;
 }
 
 .header {
@@ -43,6 +43,10 @@ body {
     text-align: start;
 }
 
+.game-description .container {
+    max-width: 600px;
+}
+
 .game-description .title {
     color: var(--color-light-yellow);
     font-weight: 900;
@@ -65,6 +69,7 @@ body {
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin: 7rem auto;
 }
 
