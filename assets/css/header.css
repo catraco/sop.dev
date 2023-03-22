@@ -14,7 +14,13 @@
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 1.7em;
+  font-size: 1.8em;
+  display: inline-block;
+  float: left;
+}
+
+.header .pc-nav {
+  float: right;
 }
 
 .header .pc-option {
@@ -54,6 +60,7 @@
   background: none;
   outline: none;
   border: none;
+  float: right;
 }
 
 .header .hamburger .bar, .hamburger:after, .hamburger:before {
